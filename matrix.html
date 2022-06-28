@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="matrix.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Eisenhower Matrix</h3>
+    <div id="quote">
+      <figure>
+        <blockquote class="blockquote">
+          <p>“Who can define for us with accuracy the difference between the long and
+            short term! Especially whenever our affairs seem to be in crisis, we are
+            almost compelled to give our first attention to the urgent present
+            rather than to the important future.”</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">Dwight D. Eisenhower, <cite title="Source Title">1961 address to the Century Association</cite>
+        </figcaption>
+      </figure>
+    </div>
+    
+    <div class="container">
+      <div class="input">
+        <p >
+          Determining urgency and importance will always depend on your context
+          and your ability to recognize what's truly urgent and truly important.
+        </p>
+        <p>It is important or not? Is it urgent or not?</p>
+        
+        <select class="form-select" required>
+          <option value="" disabled selected hidden>Please select</option>
+          <option value="volvo">Important</option>
+          <option value="saab">Not important</option>
+        </select>
+        <select class="form-select" required >
+          <option value="" disabled selected hidden>Please select</option>
+          <option value="fiat">Urgent</option>
+          <option value="audi">Not urgent</option>
+        </select>
+        <input id="newTask" type="text" placeholder="" />
+        <button id="btnAdd">Add</button>
+      </div>
+      <p id="message">You already added this task.</p>
+      <div class="grid">
+        <div class="quadrant">Clear</div>
+        <div class="quadrant">Urgent</div>
+        <div class="quadrant">Not urgent</div>
+        <div class="quadrant">Important</div>
+        <div class="quadrant"></div>
+        <div class="quadrant"></div>
+        <div class="quadrant">Not important</div>
+        <div class="quadrant"></div>
+        <div class="quadrant"></div>
+      </div>
+    </div>
+    <div class="description">
+      <ol>
+        <li>
+          <h4>Important and urgent → <span>Do it</span></h4>
+          <ul>
+            <li>
+              Crises, pressing problems and other things where not acting now
+              has negative consequences.
+            </li>
+            <li>
+              These are the tasks that you want to do as soon as possible.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>Important but not urgent → <span>Schedule it</span></h4>
+          <ul>
+            <li>Find a time for these tasks and do them then.</li>
+            <li>
+              This quadrant is typically where deep work happens, tasks that
+              contribute to your projects or long-term goals.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>Urgent but not important → <span>Delegate it</span></h4>
+          <ul>
+            <li>
+              If you can't delegate it, schedule it but always try to do the
+              important-but-not-urgent tasks first.
+            </li>
+            <li>
+              These are often administrative tasks or things that have deadlines
+              but aren't critical.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>Not urgent and not important → <span>Don't do it</span></h4>
+          <ul>
+            <li>
+              These tasks aren't worth your time and you shouldn't do them at
+              all.
+            </li>
+            <li>
+              Avoidance activities, busy work and entertainment goes into this
+              quadrant.
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="matrix.js"></script>
+  </body>
+</html>
